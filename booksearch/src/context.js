@@ -1,39 +1,12 @@
 import React , { useCallback, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-
 const url = "https://openlibrary.org/search.json?title=";
 const AppContext = React.createContext();
 
 const AppProvider = ({children}) => {
     
-    // const navigate = useNavigate()
-    //location
-    // const [location, setLocation] = useState(""); 
     const [search,searchresults] = useState("")
     const [searchdata , setSearchdata] =useState("");
     
-
-    // const getlocation = async()=>{
-    //     try {
-    //         const url = "http://localhost:5000/location";
-    //         const response = await fetch(url,{
-    //         method: "GET",
-    //         headers: {
-    //             'Content-Type':"application/json"
-    //         }
-    //     });
-    //     // console.log("response: ",response)
-    //     if(response.ok){
-    //         const data = await response.json();
-    //         setLocation(data)
-    //         // console.log("data: ",data)
-    //     } 
-
-    //     } catch (error) {
-    //         console.log(error)
-    //     }
-    // }
-
     //booksearch
     const [token,setToken] = useState(localStorage.getItem("token"))
     const [user,setUser] = useState("")
@@ -112,14 +85,12 @@ const AppProvider = ({children}) => {
     },[searchBook])
 
     useEffect(()=>{
-        // getlocation()
         fetchBooks();
     },[searchBook,books,fetchBooks])
 
     return(
         <AppContext.Provider value={{setLoading,searchBook,setSearchBook,books,setBooks,Loading,fetch,resultTitle,setResultTitle,user,setUser,storetoken,isLoggedIn,LogoutUser,search,searchresults,searchdata,setSearchdata}}>
-        {/* // <AppContext.Provider value={{fetch,user,setUser,storetoken,isLoggedIn,LogoutUser}}> */}
-            {children}
+             {children}
         </AppContext.Provider>
     )
 
