@@ -1,0 +1,32 @@
+.AboutBody{
+    /* padding: 2rem; */
+    /* margin: 2rem; */
+    margin-right: 30rem;
+    margin-left: 30rem;
+}
+
+.aboutStyle img{
+    margin-top: 2rem;
+}
+
+.AboutBody h1{
+    margin-top: 20px;
+    color: #07b798;
+    font-weight: 600;
+}
+
+.AboutBody h1,h2,h3{
+    text-align: left;
+}
+
+.AboutBody p{
+    margin: 21px 0;
+    line-height: 23.1px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.AboutBody a{
+    color: #ab2f26;
+    text-decoration: underline;
+}

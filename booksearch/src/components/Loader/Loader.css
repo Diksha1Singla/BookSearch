@@ -1,0 +1,12 @@
+.loader{
+    padding: 4rem 0;
+}
+
+.loader img{
+    width: 2px;
+}
+
+.LoaderImg img{
+    justify-self:center;
+    width: 10rem;
+}

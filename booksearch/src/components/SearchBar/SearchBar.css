@@ -1,0 +1,54 @@
+.form-control {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    border-radius:  3.8rem;
+    opacity: 0.5;
+}
+
+button {
+    padding-left: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* .search-form-elem .form-control{
+    font-size: 2rem;
+    padding: 0.6rem;
+}
+    .search-container ::placeholder{
+    color: rgb(14, 14, 14);
+    text-align: center;
+} */
+.form-control:focus{
+    font-size: 2.05rem;
+    opacity: 1;
+    /* text-align: left; */
+    /* padding-left: 2.5rem; */
+}
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+  
+.search-button {
+opacity: 0.5;
+position: absolute;
+right: 10px;
+top: 50%;
+transform: translateY(-50%);
+background: none;
+border: none;
+cursor: pointer;
+display: flex;
+align-items: center;
+}
+
+.search-button .text-purple {
+color: rgb(14, 14, 14);
+}
+  

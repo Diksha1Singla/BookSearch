@@ -1,0 +1,128 @@
+.login-container{
+    padding: 10vh;
+}
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.login-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.788)),url("../../images/image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+.login-box {
+    /* background:linear-gradient(135deg, #71b7e6, #9b59b6); */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    width: 350px;
+    text-align: center;
+    justify-content: center;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: white;
+    transform: translateY(-70%);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+    font-size: 1.5rem;
+    /* color: #240530; */
+    color: white;
+}
+
+.input-box:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #9b59b6;
+    transition: 0.5s;
+    left: 0;
+    bottom: 0;
+}
+
+.input-box input:focus:before,
+.input-box input:valid:before {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.button-box input {
+    width: 100%;
+    padding: 10px;
+    background: #9b59b6;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.button-box input:hover {
+    background: #71b7e6;
+}
+
+.signup-link {
+    margin-top: 20px;
+    color: white;
+}
+
+.signup-link a {
+    color: #3319c7;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.signup-link a:hover {
+    color: #71b7e6;
+    font-size: 1.5rem;
+}
